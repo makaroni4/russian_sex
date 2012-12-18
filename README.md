@@ -1,6 +1,8 @@
 # RussianSex
+[![Build Status](https://travis-ci.org/makaroni4/russian_sex.png)](https://travis-ci.org/makaroni4/russian_sex)
 
-TODO: Write a gem description
+Detecting gender based on russian first names.
+Определение пола пользователя по имени.
 
 ## Installation
 
@@ -18,12 +20,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+~~~ruby
+detector = RussianSex::Detector.new
+detector.detect 'Валера'
+# => 'M'
 
-## Contributing
+detector.detect 'Мария'
+# => 'F'
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+detector.detect 'Женя'
+# => '-'
+
+detector.detect 'ГадяПетровичХренова'
+# => 'undefined'
+~~~
+
+## TODO
+
+Добавить морфологический модуль – если не нашлось имя в списке, то определить имя по окончанию.
