@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["makaroni4@gmail.com"]
   gem.description   = %q{Gender detector for russian names.}
   gem.summary       = %q{Based on 40k database of russian first names.}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/makaroni4/russian_sex"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
