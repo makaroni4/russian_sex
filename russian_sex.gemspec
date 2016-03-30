@@ -18,5 +18,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_dependency('unicode_utils', '>= 1.4.0')
-  gem.add_development_dependency('rake')
+  gem.add_development_dependency('rake', '~> 10')
 end
