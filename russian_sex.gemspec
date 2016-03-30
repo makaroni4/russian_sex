@@ -20,4 +20,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency('unicode_utils', '>= 1.4.0')
   gem.add_development_dependency('rake', '~> 10')
   gem.add_development_dependency "bundler", "~> 1.6"
+
 end
