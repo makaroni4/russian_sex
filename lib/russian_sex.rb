@@ -14,7 +14,7 @@ module RussianSex
     end
 
     def detect name
-      @names[UnicodeUtils.downcase(name)] || 'undefined'
+      @names[UnicodeUtils.downcase(name.strip)] || 'undefined'
     end
   end
 end
